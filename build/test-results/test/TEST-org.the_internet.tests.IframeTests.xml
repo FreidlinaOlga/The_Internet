@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.the_internet.tests.IframeTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-01T16:20:53" hostname="DELLSMALL" time="1.041">
+  <properties/>
+  <testcase name="iframeTest" classname="org.the_internet.tests.IframeTests" time="1.041"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
