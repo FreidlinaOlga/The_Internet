@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.the_internet.tests.DropdownTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-02T17:52:35" hostname="DELLSMALL" time="0.28">
+  <properties/>
+  <testcase name="selectOptionTest" classname="org.the_internet.tests.DropdownTest" time="0.28"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

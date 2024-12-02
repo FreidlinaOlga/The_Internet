@@ -27,4 +27,20 @@ public class HomePage extends BasePage {
         click(frames);
         return new FramePage(driver);
     }
+
+    @FindBy(css = "[href='/windows']")
+    WebElement multipleWindows;
+
+    public MultipleWindowsPage getMultipleWindows() {
+        click(multipleWindows);
+        return new MultipleWindowsPage(driver);
+    }
+
+    @FindBy(xpath = "//a[contains(text(),'Dropdown')]")
+    WebElement dropdown;
+
+    public DropdownPage getDropdown() {
+        click(dropdown);
+        return new DropdownPage(driver);
+    }
 }

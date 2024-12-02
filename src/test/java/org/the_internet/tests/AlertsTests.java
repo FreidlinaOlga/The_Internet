@@ -13,7 +13,6 @@ public class AlertsTests extends TestBase {
     }
 
     @Test
-
     public void clickForJsAlertTest() {
         new AlertsPage(driver).jsAlert();
 

@@ -17,7 +17,5 @@ public class IframeTests extends TestBase {
         new FramePage(driver).selectIframe()
                 .switchToIframeById()
                 .verifyIframeByText("Your content goes here.");
-
-
     }
 }
