@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
+
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -66,5 +68,21 @@ public class HomePage extends BasePage {
     public HoversPage getHovers() {
         click(hovers);
         return new HoversPage(driver);
+    }
+
+    @FindBy(css = "[href='/broken_images']")
+    WebElement brokenImages;
+
+    public ImagesPage getBrokenImages() {
+        click(brokenImages);
+        return new ImagesPage(driver);
+    }
+
+    @FindBy(css = "[href='/redirector']")
+    WebElement redirector;
+
+    public RedirectLinksPage getRedirectLinks() {
+        click(redirector);
+        return new RedirectLinksPage(driver);
     }
 }
