@@ -85,4 +85,12 @@ public class HomePage extends BasePage {
         click(redirector);
         return new RedirectLinksPage(driver);
     }
+
+    @FindBy(css = "[href='/upload']")
+    WebElement upload;
+
+    public FileUploadPage getFileUpload() {
+        click(upload);
+        return new FileUploadPage(driver);
+    }
 }
