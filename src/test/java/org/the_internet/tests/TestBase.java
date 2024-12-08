@@ -1,25 +1,23 @@
 package org.the_internet.tests;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-import java.time.Duration;
+import org.the_internet.pages.ApplicationManager;
 
 public class TestBase {
-    WebDriver driver;
+
+    protected ApplicationManager app = new ApplicationManager(System.getProperty("browser", "chrome"));
+    public WebDriver driver;
 
     @BeforeMethod
     public void setUp() {
-        driver = new ChromeDriver();
-        driver.get("https://the-internet.herokuapp.com/");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver = app.startTest();
     }
 
-    @AfterMethod(enabled = false)
+    @AfterMethod(enabled = true)
     public void tearDown() {
-        driver.quit();
+        app.stopTest();
     }
+
 }
