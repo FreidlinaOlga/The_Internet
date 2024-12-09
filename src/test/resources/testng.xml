@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Register" verbose="1">
+    <test name="Register1">
+        <classes>
+            <class name="org.the_internet.tests.RedirectLinksTest"/>
+            <class name="org.the_internet.tests.MultipleWindowsTest"/>
+        </classes>
+    </test>
+</suite>

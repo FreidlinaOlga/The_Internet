@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.the_internet.tests.RedirectLinksTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-09T17:47:24" hostname="DELLSMALL" time="1.831">
+  <properties/>
+  <testcase name="testRedirectLinks" classname="org.the_internet.tests.RedirectLinksTest" time="1.831"/>
+  <system-out><![CDATA[https://github.com/tourdedave/the-internet - OK
+http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml - OK
+status_codes/200 - no protocol: status_codes/200 Error occurred
+status_codes/301 - no protocol: status_codes/301 Error occurred
+status_codes/404 - no protocol: status_codes/404 Error occurred
+status_codes/500 - no protocol: status_codes/500 Error occurred
+http://elementalselenium.com/ - Moved Permanently
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
